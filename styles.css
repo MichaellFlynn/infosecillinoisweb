@@ -1,0 +1,503 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background-color: #00001c;*/
+    background-color: #13294B;
+    background-image: url('3409297.jpg');
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+  }
+
+  /*body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.2; 
+    pointer-events: none;
+  }*/
+
+  /*.a{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+  }*/
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #34343480;
+    transition: background-color 0.5s;
+    padding: 3px;
+    padding-left: 10px; /* Add 10px of left padding */
+    display: flex;
+    z-index: 100; /* Ensures the navbar is on top of the content */
+    transition: background-color 0.4s ease-in-out;
+}
+  .navbar.scrolled {
+    background-color: #77bbef; /* Change to blue when scrolled past the top */
+  }
+
+  .our-work-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #FFF;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 645px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .our-work-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+
+  .about-page-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #FFF;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 475px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .about-page-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+
+  .contact-us-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #FFF;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 290px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .contact-us-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+
+  .recruitment-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #FFF;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 95px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .recruitment-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+  
+  .navbar-brand {
+    font-size: 42px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    /*margin-left: 50px;*/
+    margin-left: -10px;
+    letter-spacing: 5px;
+    transition-duration: 0.5s;
+  }
+  .navbar-brand:hover {
+    color: #9b773d;
+  }
+
+  .iscilogo {
+    /*max-width: 50px;*/
+    max-height: 50px;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    transition: filter 0.3s;
+  }
+  
+  .iscilogo:hover {
+    filter: brightness(0.8);
+  }
+  
+
+
+
+
+  /*HERO SECTION*/
+  .hero {
+    height: 775px;
+    /*background-image: url('websitebackground.webp');*/
+    background-color: rgba(0, 0, 0, 0); /* Adjust the alpha (last value) for transparency */
+    /*background: rgb(7,13,102);*/
+    /*background: linear-gradient(90deg, rgba(7,13,102,1) 0%, rgba(140,91,49,1) 50%, rgba(232,74,39,1) 100%);*/
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+  }
+
+  .uiuchero {
+    color: #E84A27;
+    transition-duration: 0.5s;
+    text-decoration: none;
+  }
+
+  .uiuchero:hover {
+    color: #13294B;
+    font-size: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+    color: white;
+    margin-top: 100px;
+  }
+  
+
+  /*ABOUT SECTION ON HOMEPAGE*/
+  /*.about-us {
+    height: 2000px;
+    padding: 20px;
+    background-color: #000d22;
+  }
+  
+  .about-us h2 {
+    margin-right: 600px;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color:#FFF;
+    font-weight: bold;
+  }
+  
+  .about-us p {
+    color: #FFF;
+    font-size: 16px;
+  }*/
+
+  /*Attention Stat Section*/
+  .attention-stat-section {
+    height: 400px;
+    background-color: #13294B;
+  }
+  .percentage-attention-stat {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(43, 116, 43);
+    font-size: 120px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
+  }
+  .percentage-txt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    margin-top: -50px;
+    color: #FFF;
+  }
+
+  /*Our Work Section*/
+  .our-work-section {
+    background-color: #13294B;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+  }
+  .what-we-do-our-work {
+    padding-top: 30px;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  .our-work-txt {
+    text-align: center;
+    display:block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    padding-top: 20px;
+    margin-inline: 200px;
+  }
+  .work-for-btn {
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    align-items: center;
+    background-color: #77bbef;
+    color: #FFF;
+    font-size: 18px;
+    padding: 11.25px;
+    transition: ease-in 0.5s;
+    margin-top: 50px;
+  }
+  .work-for-btn:hover {
+    background-color: #FFF;
+    color: #000;
+  }
+
+  /*About Us Section*/
+  .about-us-section {
+    height: 400px;
+    background-color: #13294B;
+    text-align: center;
+  }
+  .about-us-heading {
+    padding-top: 30px;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  .about-us-txt {
+    text-align: center;
+    display:block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    padding-top: 20px;
+    margin-inline: 200px;
+  }
+  .about-us-for-btn {
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    align-items: center;
+    background-color: #77bbef;
+    color: #FFF;
+    font-size: 18px;
+    padding: 11.25px;
+    transition: ease-in 0.5s;
+    margin-top: 50px;
+  }
+  .about-us-for-btn:hover {
+    background-color: #FFF;
+    color: #000;
+  }
+
+  /*Interest Section*/
+  .interest-section {
+    height: 400px;
+    background-color: #13294B;
+    text-align: center;
+  }
+  .interest-heading {
+    padding-top: 30px;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  .interest-txt {
+    text-align: center;
+    display:block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    margin-inline: 200px;
+  }
+  .interest-button {
+    display: flex;
+  }
+  .int-cont-btn {
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    align-items: center;
+    background-color: #77bbef;
+    color: #FFF;
+    font-size: 18px;
+    padding: 11.25px;
+    transition: ease-in 0.5s;
+    margin-top: 50px;
+  }
+  .int-cont-btn:hover {
+    background-color: #FFF;
+    color: #000;
+  }
+  .int-rec-btn {
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    align-items: center;
+    background-color: #77bbef;
+    color: #FFF;
+    font-size: 18px;
+    padding: 11.25px;
+    transition: ease-in 0.5s;
+    margin-top: 30px;
+  }
+  .int-rec-btn:hover {
+    background-color: #FFF;
+    color: #000;
+  }
+
+
+  /*FOOTER SECTION*/
+  footer {
+    margin-top: 5px;
+    height: 150px;
+    background-color: rgb(176, 176, 176);
+    color: black;
+    text-align: center;
+    padding: 10px;
+  
+    font-family: sans-serif;
+    font-size: 14px;
+  
+    border-top: 1px solid gray;
+  }
+
+  .iscilogofooter {
+    max-width: 150px;
+    margin: 0px;
+    transition: filter 0.3s;
+  }
+
+  .iscologofooter:hover {
+    filter: brightness(0.1);
+  }
+
+  .footer-middle {
+    padding-top: 0px;
+    margin-top: -40px;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 16px;
+    margin-left: 50px;
+    flex: 1; /* Copyright takes up available space on the left */
+    text-align: left;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #434343;
+  }
+  
+  .ischool-link {
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 50px;
+    margin-top: -22px;
+    flex: 1; /* Company link takes up available space on the right */
+    text-align: right;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color:#434343;
+    transition: color 0.2s;
+  }
+
+  .ischool-link a {
+    text-decoration: none; /* Remove underlines from the link */
+    color: #434343;
+    transition: color 0.2s;
+  }
+
+  .ischool-link:hover {
+    color: #252525; /* Darker color on hover */
+  }
+  .ischool-link a:hover {
+    color: #252525; /* Darker color on hover */
+  }
+
+  
+  .social-media-icons {
+    margin-top: 35px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .social-media-icons .social-icon {
+    display: inline-block; /* Display icons in a line */
+    margin: 0 50px; /* Adjust the margin to control spacing between icons */
+  }
+
+  .social-media-icons .social-icon i {
+    color: #434343; /* Set the icon color to black */
+    transition: color 0.33s;
+  }
+
+  .social-media-icons .social-icon i:hover {
+    color: #252525;
+  }
+  
+
+  /*.social-icons {
+    max-width: 1px;
+    display: inline-block;
+  }
+
+  .social-icon img {
+    width: 100%;
+    height: 100%;
+  }*/
+
+  /*.copyright {
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  .ischool-link {
+    font-size: 22px;
+    color: blue;
+    text-align: right;
+  }*/
+  

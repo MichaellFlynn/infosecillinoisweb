@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Work</title>
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+  integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+  crossorigin="anonymous"
+  />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /*background-color: #00001c;*/
+      background-color: #13294B;
+      background-size: cover; 
+      background-attachment: fixed; 
+      background-repeat: no-repeat; 
+      background-position: center center;
+    }
+
+    .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(52, 52, 52, 0.5);
+    transition: background-color 0.5s;
+    padding: 3px;
+    padding-left: 10px; /* Add 10px of left padding */
+    display: flex;
+    z-index: 100; /* Ensures the navbar is on top of the content */
+    transition: background-color 0.4s ease-in-out;
+}
+  .navbar.scrolled {
+    background-color: #77bbef; /* Change to blue when scrolled past the top */
+  }
+
+  .our-work-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #9b773d;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 645px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .our-work-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+
+  .about-page-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #FFF;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 475px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .about-page-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+
+  .contact-us-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #FFF;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 290px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .contact-us-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+
+  .recruitment-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #FFF;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 95px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .recruitment-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+  
+  .navbar-brand {
+    font-size: 42px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    /*margin-left: 50px;*/
+    margin-left: -10px;
+    letter-spacing: 5px;
+    transition-duration: 0.5s;
+  }
+  .navbar-brand:hover {
+    color: #9b773d;
+  }
+
+  .iscilogo {
+    /*max-width: 50px;*/
+    max-height: 50px;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    transition: filter 0.3s;
+  }
+  
+  .iscilogo:hover {
+    filter: brightness(0.8);
+  }
+
+
+  /*Hero Section*/
+  .our-work-hero {
+    height: 600px;
+    display: flex;
+    background-color: #FFF;
+    padding: -100px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(ourworkheroimg.jpeg); /* Add this line */
+    background-size: cover; /* Optional: Adjust according to your needs */
+    background-position: center; /* Optional: Adjust according to your needs */
+  }
+
+  .hero-txt {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+
+  .spacer-hero-mission {
+    height: 20px;
+    background-color: #77bbef;
+  }
+
+  /*Our Mission Section*/
+  .our-mission-section {
+    height: 550px;
+  }
+
+  .our-mission-lbl {
+    padding-top: 80px;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 10px;
+  }
+  
+
+  .our-mission-txt {
+    color: #FFF;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0 140px;
+    margin-top: 50px;
+  }
+
+  /*Services Section*/
+  .services-section {
+    margin-top: -5px;
+    height: 750px;
+    padding-inline: 40px;
+  }
+  
+  
+  .services-mission-txt {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+  }
+
+  .service-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .service-block {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 80px;
+    padding: 20px;
+    text-align:inherit;
+    height: 400px;
+    max-width: 400px;
+    transition: ease-in-out 0.5s;
+  }
+  .service-block:hover {
+    background-color: #ddd;
+  }
+
+  .service-block h2 {
+    color: #333;
+  }
+
+  .service-block p {
+      color: #666;
+  }
+  
+  /*Learn More Section*/
+  .learn-more-section {
+    height: 300px;
+    text-align: center;
+  }
+
+  .learn-more-txt {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #77bbef;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin for separation */
+    font-family: 'Montserrat', sans-serif;
+    transition: ease-in-out 0.5s;
+  }
+
+  .learn-more-btn:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+
+    /*FOOTER SECTION*/
+  footer {
+    margin-top: 5px;
+    height: 150px;
+    background-color: rgb(176, 176, 176);
+    color: black;
+    text-align: center;
+    padding: 10px;
+  
+    font-family: sans-serif;
+    font-size: 14px;
+  
+    border-top: 1px solid gray;
+  }
+
+  .iscilogofooter {
+    max-width: 150px;
+    margin: 0px;
+    transition: filter 0.3s;
+  }
+
+  .iscologofooter:hover {
+    filter: brightness(0.1);
+  }
+
+  .footer-middle {
+    padding-top: 0px;
+    margin-top: -40px;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 16px;
+    margin-left: 50px;
+    flex: 1; /* Copyright takes up available space on the left */
+    text-align: left;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #434343;
+  }
+  
+  .ischool-link {
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 50px;
+    margin-top: -22px;
+    flex: 1; /* Company link takes up available space on the right */
+    text-align: right;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color:#434343;
+    transition: color 0.2s;
+  }
+
+  .ischool-link a {
+    text-decoration: none; /* Remove underlines from the link */
+    color: #434343;
+    transition: color 0.2s;
+  }
+
+  .ischool-link:hover {
+    color: #252525; /* Darker color on hover */
+  }
+  .ischool-link a:hover {
+    color: #252525; /* Darker color on hover */
+  }
+
+  
+  .social-media-icons {
+    margin-top: 45px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+  }
+
+  .social-media-icons .social-icon {
+    display: inline-block; /* Display icons in a line */
+    margin: 0 50px; /* Adjust the margin to control spacing between icons */
+  }
+
+  .social-media-icons .social-icon i {
+    color: #434343; /* Set the icon color to black */
+    transition: color 0.33s;
+  }
+
+  .social-media-icons .social-icon i:hover {
+    color: #252525;
+  }
+  </style>
+</head>
+<body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+
+  <nav class="navbar">
+    <div id="navbar-left">
+      <a href="/index.html"><img src="Untitled drawing (3).png" alt="Logo" class="iscilogo"></a>
+    </div>
+    <div id="navbar-right">
+      <a href="/aboutuspage.html" class="about-page-btn">About Us</a>
+      <a href="ourwork.html" class="our-work-btn">Our Work</a>
+      <a href="/contactus.html" class="contact-us-btn">Contact Us</a>
+      <a href="/recruit.html" class="recruitment-btn">Recruitment</a>
+    </div>
+  </nav>
+
+  <div class="our-work-hero">
+    <h1 class="hero-txt">Our Work</h1>
+  </div>
+
+  <div class="spacer-hero-mission"></div>
+
+  <div class="our-work-section">
+    <section class="our-mission-section">
+      <h1 class="our-mission-lbl">Our Mission</h1>
+      <p class="our-mission-txt">
+        Information Security Consulting at Illinois is a student-run organization dedicated to fostering a 
+        vibrant community of cybersecurity enthusiasts at the University of Illinois. Our mission is to empower 
+        students passionate about cybersecurity by providing engaging opportunities that extend beyond theoretical learning,
+        offering practical, hands-on experiences with real-world clients. <br> <br>
+        Acknowledging the ever-evolving landscape of information security, 
+        we aim to equip our members with the skills, knowledge, and insights necessary to navigate this dynamic field.
+        We transcend traditional academic boundaries, cultivating an environment where creativity and innovation thrive alongside 
+        a commitment to professional excellence. <br> <br>
+        As an innovation hub, Information Security Consulting at Illinois incubates innovative ideas and projects. 
+        We encourage members to explore emerging technologies, participate in hackathons, and contribute to cutting-edge research 
+        in collaboration with our experienced mentors. Embracing diversity in all its forms, we strive to create an inclusive environment 
+        that welcomes individuals from varied backgrounds,fostering a rich tapestry of perspectives within the cybersecurity landscape. 
+      </p>
+    </section>
+    <div class="spacer-hero-mission"></div>
+    <section class="services-section">
+      <h1 class="our-mission-lbl">Services</h1>
+      <p class="services-mission-txt">Information Security Consulting Illinois provides students, clients, and stakeholders with defensive security solutions
+        as well as research in areas of privacy, risk, and compliance.
+      </p>
+      <div class="service-container">
+        <div class="service-block">
+            <h2>CRA (Cyber Risk Advsiory)</h2>
+            <p>Our Cyber Risk Advisory (CRA) services at Information Security Consulting Illinois are tailored to address the intricate challenges of the cybersecurity landscape. We specialize in providing strategic guidance and risk assessments, ensuring our clients navigate the evolving threat landscape with resilience. From comprehensive risk mitigation strategies to regulatory compliance, our team is dedicated to delivering top-notch advisory services. While our focus areas include privacy, risk management, and compliance, we are open to tailoring our expertise to meet the unique cybersecurity needs of our clients.
+            </p>
+        </div>
+        <div class="service-block">
+            <h2>Research</h2>
+            <p>In the realm of cybersecurity research, Information Security Consulting Illinois is at the forefront of innovation. Our research initiatives delve into critical areas such as privacy, risk analysis, and compliance, shaping the future of information security. We foster an environment that encourages exploration and discovery, allowing our team to contribute valuable insights to the broader cybersecurity community. Beyond our core focus, we welcome collaborative opportunities to explore emerging trends and expand the boundaries of knowledge in the ever-evolving field of cybersecurity.
+            </p>
+        </div>
+      </div>
+    </section>
+    <section class="learn-more-section">
+      <div class="spacer-hero-mission"></div>
+      <h1 class="our-mission-lbl">Learn More</h1>
+      <p class="learn-more-txt">If clients or students have any further inquiries about potential work with the organization, 
+        please feel free to contact us! 
+      </p>
+      <button onclick="window.location.href='mailto:infosecillinois@gmail.com'" class="learn-more-btn">Contact Us</button>
+    </section>
+  </div>  
+
+  <footer>
+    <!--Logo For Footer-->
+    <div class="footer-top">
+      <a href="/index.html"><img src="isciLogoBlack.png" alt="Logo-footer" class="iscilogofooter"></a>
+    </div>
+    <!--Copyright and iSchool Website-->
+    <div class="footer-middle">
+      <div class="copyright">&copy; 2023 Information Security Consulting Illinois</div>
+      <div class="ischool-link"><a href="https://ischool.illinois.edu/" target="_blank">Visit The School of Information Sciences</a></div>
+    </div>
+    <!--Social Links-->
+    <div class="social-media-icons">
+      <a href="https://twitter.com/home" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"> </i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+        <i class="fab fa-facebook"> </i>
+      </a>
+      <a href="https://github.com/infosecillinois/infosecillinoisweb" target="_blank" class="social-icon">
+        <i class="fab fa-github"> </i>
+      </a>
+      <a href="https://www.linkedin.com/in/pratham-soni-6a971421b/" class="social-icon">
+        <i class="fab fa-linkedin"> </i>
+        <!--<img src="img.png" alt="LinkedIn">-->
+      </a>
+    </div>
+  </footer> 
+</body>
+    <script>
+        document.addEventListener('scroll', () => {
+        const header = document.querySelector('.navbar');
+    
+        if(window.scrollY > 20) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        })
+    </script>
+</html>

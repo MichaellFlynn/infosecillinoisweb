@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+  integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+  crossorigin="anonymous"
+  />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /*background-color: #00001c;*/
+      background-color: #13294B;
+      background-size: cover; 
+      background-attachment: fixed; 
+      background-repeat: no-repeat; 
+      background-position: center center;
+    }
+
+    .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(52, 52, 52, 0.5);
+    transition: background-color 0.5s;
+    padding: 3px;
+    padding-left: 10px; /* Add 10px of left padding */
+    display: flex;
+    z-index: 100; /* Ensures the navbar is on top of the content */
+    transition: background-color 0.4s ease-in-out;
+}
+  .navbar.scrolled {
+    background-color: #77bbef; /* Change to blue when scrolled past the top */
+  }
+
+  .our-work-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #FFF;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 645px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .our-work-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+
+  .about-page-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #9b773d;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 475px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .about-page-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+
+  .contact-us-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #FFF;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 290px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .contact-us-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+
+  .recruitment-btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    /*background-color: #050650;*/
+    color: #FFF;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 95px;
+    bottom: 15px;
+    transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
+  }
+  .recruitment-btn:hover {
+    /*background-color: #ff770f;*/
+    color: #9b773d;
+  }
+  
+  .navbar-brand {
+    font-size: 42px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    /*margin-left: 50px;*/
+    margin-left: -10px;
+    letter-spacing: 5px;
+    transition-duration: 0.5s;
+  }
+  .navbar-brand:hover {
+    color: #9b773d;
+  }
+
+  .iscilogo {
+    /*max-width: 50px;*/
+    max-height: 50px;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    transition: filter 0.3s;
+  }
+  
+  .iscilogo:hover {
+    filter: brightness(0.8);
+  }
+
+/*Hero Section*/
+.about-us-hero {
+    height: 600px;
+    display: flex;
+    background-color: #FFF;
+    padding: -100px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(About-Us-Hero-img.jpeg); /* Add this line */
+    background-size: cover; /* Optional: Adjust according to your needs */
+    background-position: center; /* Optional: Adjust according to your needs */
+  }
+
+  .hero-txt {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+
+  .spacer-hero-mission {
+    height: 20px;
+    background-color: #77bbef;
+  }
+
+  .contactusSection {
+    height: 1000px;
+  }
+
+  /*Who We Are Section*/
+  .who-we-are-section {
+    height: 630px;
+    text-align: center;
+  }
+  .main-heading-abt {
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: #FFF;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .who-we-are-txt {
+    font-size: 18px;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    margin-inline: 150px;
+    margin-top: 50px;
+  }
+  .who-we-are-btn {
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 80px;
+    background-color: #77bbef;
+    padding: 10px;
+    margin-top: 15px;
+    transition: ease-in 0.5s;
+  }
+  .who-we-are-btn:hover {
+    background-color: #FFF;
+    color: #000;
+  }
+
+  .who-we-are-section img {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+
+  /*Board and Leadership Section*/
+  .board-and-leadership-section {
+    height: 700px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .board-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    /*background-color: #f8f8f8; /* Adjust background color as needed */
+}
+
+.board-member {
+    text-align: center;
+    max-width: 100px; /* Adjust the maximum width of each member box */
+}
+
+.board-member img {
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    border-radius: 50%; /* Optional: Round the corners of the image */
+}
+
+.member-info {
+    margin-top: 15px;
+}
+
+.member-name {
+    font-weight: bold;
+    color: #FFF;
+}
+
+.member-class {
+    color: #d1d1d1;
+}
+
+  /*Our Experience Section*/
+  .our-experience-section {
+    align-items: center;
+    height: 500px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .our-experience-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  /*FOOTER SECTION*/
+  footer {
+    margin-top: 5px;
+    height: 150px;
+    background-color: rgb(176, 176, 176);
+    color: black;
+    text-align: center;
+    padding: 10px;
+  
+    font-family: sans-serif;
+    font-size: 14px;
+  
+    border-top: 1px solid gray;
+  }
+
+  .iscilogofooter {
+    max-width: 150px;
+    margin: 0px;
+    transition: filter 0.3s;
+  }
+
+  .iscologofooter:hover {
+    filter: brightness(0.1);
+  }
+
+  .footer-middle {
+    padding-top: 0px;
+    margin-top: -40px;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 16px;
+    margin-left: 50px;
+    flex: 1; /* Copyright takes up available space on the left */
+    text-align: left;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #434343;
+  }
+  
+  .ischool-link {
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 50px;
+    margin-top: -22px;
+    flex: 1; /* Company link takes up available space on the right */
+    text-align: right;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color:#434343;
+    transition: color 0.2s;
+  }
+
+  .ischool-link a {
+    text-decoration: none; /* Remove underlines from the link */
+    color: #434343;
+    transition: color 0.2s;
+  }
+
+  .ischool-link:hover {
+    color: #252525; /* Darker color on hover */
+  }
+  .ischool-link a:hover {
+    color: #252525; /* Darker color on hover */
+  }
+
+  
+  .social-media-icons {
+    margin-top: 45px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+  }
+
+  .social-media-icons .social-icon {
+    display: inline-block; /* Display icons in a line */
+    margin: 0 50px; /* Adjust the margin to control spacing between icons */
+  }
+
+  .social-media-icons .social-icon i {
+    color: #434343; /* Set the icon color to black */
+    transition: color 0.33s;
+  }
+
+  .social-media-icons .social-icon i:hover {
+    color: #252525;
+  }
+  </style>
+</head>
+<body>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+
+  <nav class="navbar">
+    <div id="navbar-left">
+      <a href="/index.html"><img src="Untitled drawing (3).png" alt="Logo" class="iscilogo"></a>
+    </div>
+    <div id="navbar-right">
+      <a href="/aboutuspage.html" class="about-page-btn">About Us</a>
+      <a href="ourwork.html" class="our-work-btn">Our Work</a>
+      <a href="/contactus.html" class="contact-us-btn">Contact Us</a>
+      <a href="/recruit.html" class="recruitment-btn">Recruitment</a>
+    </div>
+  </nav>
+
+  <div class="about-us-hero">
+    <h1 class="hero-txt">About Us</h1>
+  </div>
+
+  <div class="spacer-hero-mission"></div>
+
+  <section class="who-we-are-section">
+    <h1 class="main-heading-abt">Who We Are</h1>
+    <img src="ischoolbuildingpic.jpeg" alt="Pratham Soni">
+    <p class="who-we-are-txt">Information Security Consulting Illinois was formed by a group of diverse students at the University
+      of Illinois at Urbana-Champaign. This organization adopts a multidisciplinary approach to its delivery of security solutions,
+       crediting diverse backgrounds and pathways within information sciences, engineering, business, and other disciplines.
+    </p>
+    <a href="ourwork.html">
+      <button class="who-we-are-btn">More About Our Work</button>
+    </a>
+  </section>
+
+  <div class="spacer-hero-mission"></div>
+
+  <section class="board-and-leadership-section">
+    <h1 class="main-heading-abt">Board & Leadership</h1>
+    <section class="board-section">
+      <div class="board-member">
+          <img src="Empty-Profile.jpeg" alt="Pratham Soni">
+          <div class="member-info">
+              <p class="member-name">Example 1</p>
+              <p class="member-class">Class</p>
+          </div>
+      </div>
+
+      <div class="board-member">
+        <img src="Empty-Profile.jpeg" alt="Pratham Soni">
+        <div class="member-info">
+            <p class="member-name">Example 2</p>
+            <p class="member-class">Class</p>
+        </div>
+      </div>
+
+      <div class="board-member">
+        <img src="Empty-Profile.jpeg" alt="Pratham Soni">
+        <div class="member-info">
+            <p class="member-name">Example 3</p>
+            <p class="member-class">Class</p>
+        </div>
+      </div>
+  
+      <!-- Repeat the above structure for additional board members -->
+  
+    </section>
+    <section class="board-section">
+      <div class="board-member">
+          <img src="Empty-Profile.jpeg" alt="Pratham Soni">
+          <div class="member-info">
+              <p class="member-name">Example 4</p>
+              <p class="member-class">Class</p>
+          </div>
+      </div>
+
+      <div class="board-member">
+        <img src="Empty-Profile.jpeg" alt="Pratham Soni">
+        <div class="member-info">
+            <p class="member-name">Example 5</p>
+            <p class="member-class">Class</p>
+        </div>
+      </div>
+
+      <div class="board-member">
+        <img src="Empty-Profile.jpeg" alt="Pratham Soni">
+        <div class="member-info">
+            <p class="member-name">Example 6</p>
+            <p class="member-class">Class</p>
+        </div>
+      </div>
+  
+      <!-- Repeat the above structure for additional board members -->
+  
+    </section>
+  </section>
+
+  <div class="spacer-hero-mission"></div>
+  
+  <section class="our-experience-section">
+    <h1 class="main-heading-abt">Our Experience</h1>
+    <img src="Untitled drawing (1).jpg">
+  </section>
+
+  <footer>
+    <!--Logo For Footer-->
+    <div class="footer-top">
+      <a href="/index.html"><img src="isciLogoBlack.png" alt="Logo-footer" class="iscilogofooter"></a>
+    </div>
+    <!--Copyright and iSchool Website-->
+    <div class="footer-middle">
+      <div class="copyright">&copy; 2023 Information Security Consulting Illinois</div>
+      <div class="ischool-link"><a href="https://ischool.illinois.edu/" target="_blank">Visit The School of Information Sciences</a></div>
+    </div>
+    <!--Social Links-->
+    <div class="social-media-icons">
+      <a href="https://twitter.com/home" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"> </i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+        <i class="fab fa-facebook"> </i>
+      </a>
+      <a href="https://github.com/infosecillinois/infosecillinoisweb" target="_blank" class="social-icon">
+        <i class="fab fa-github"> </i>
+      </a>
+      <a href="https://www.linkedin.com/in/pratham-soni-6a971421b/" class="social-icon">
+        <i class="fab fa-linkedin"> </i>
+        <!--<img src="img.png" alt="LinkedIn">-->
+      </a>
+    </div>
+  </footer> 
+</body>
+    <script>
+        document.addEventListener('scroll', () => {
+        const header = document.querySelector('.navbar');
+    
+        if(window.scrollY > 20) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        })
+    </script>
+</html>

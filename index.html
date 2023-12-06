@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ISCI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+  integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+  crossorigin="anonymous"
+  />
+</head>
+<body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+
+  <nav class="navbar">
+    <div id="navbar-left">
+      <a href="/index.html"><img src="Untitled drawing (3).png" alt="Logo" class="iscilogo"></a>
+      <!--<a href="/index.html" class="navbar-brand">ISCI</a>-->
+    </div>
+    <div id="navbar-right">
+      <a href="/aboutuspage.html" class="about-page-btn">About Us</a>
+      <a href="ourwork.html" class="our-work-btn">Our Work</a>
+      <a href="/contactus.html" class="contact-us-btn">Contact Us</a>
+      <a href="/recruit.html" class="recruitment-btn">Recruitment</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+      <h1>Coming To <a href="https://illinois.edu/" class="uiuchero" target="_blank">UIUC</a> Spring 2024</h1>
+  </div>
+
+  <!--Remove This Section at the End
+  <section class="about-us">
+    <div class="about-top">
+      <h2 class="aboutusbanner">Helping Protect the Digital World</h2>
+    </div>
+    <div class="about-bottom">
+      <img src="img.jpg" style="width:100%">
+      <a class="about-text">This is the text that will go in the about section. </a>
+    </div>
+  </section>
+  -->
+
+
+  <section class="attention-stat-section">
+    <h1 class="percentage-attention-stat">32%</h1>
+    <p class="percentage-txt">Increase in information security jobs over the next 10 years</p>
+  </section>
+
+
+  <section class="our-work-section">
+    <h1 class="what-we-do-our-work">What Do We Do?</h1>
+    <a class="our-work-txt">Discover the multifaceted realm of cybersecurity at Information Security Consulting Illinois. From hands-on projects to cutting-edge research, our club provides a platform for students to actively participate in shaping the future of information security.
+    </a>
+    <a href="ourwork.html" class="our-work-for-btn"><button class="work-for-btn">Our Work</button></a>
+  </section>
+
+  <section class="about-us-section">
+    <h1 class="about-us-heading">About</h1>
+    <a class = "about-us-txt">Uncover the essence of Information Security Consulting Illinois. Learn about our mission, values, and the vibrant community that drives innovation and knowledge-sharing in the ever-evolving landscape of cybersecurity.
+    </a>
+    <a href="aboutuspage.html" class="about-for-btn"><button class="about-us-for-btn">More About Us</button></a>
+  </section>
+
+  <section class="interest-section">
+    <h1 class="interest-heading">Interested?</h1>
+    <a class="interest-txt">Elevate your interest in cybersecurity with Information Security Consulting Illinois. Whether you are a seasoned professional or a newcomer to the field, our club welcomes individuals passionate about making a difference in information security.
+    </a>
+    <section class="interest-buttons">
+      <a href="contactus.html" class="interest-contact"><button class="int-cont-btn">Contact Us</button></a>
+      <a href="recruit.html" class="interest-recruit"><button class="int-rec-btn">Recruitment</button></a>
+    </section>
+  </section>
+
+
+  <footer>
+    <!--Logo For Footer-->
+    <div class="footer-top">
+      <a href="/index.html"><img src="isciLogoBlack.png" alt="Logo-footer" class="iscilogofooter"></a>
+    </div>
+    <!--Copyright and iSchool Website-->
+    <div class="footer-middle">
+      <div class="copyright">&copy; 2023 Information Security Consulting Illinois</div>
+      <div class="ischool-link"><a href="https://ischool.illinois.edu/" target="_blank">Visit The School of Information Sciences</a></div>
+    </div>
+    <!--Social Links-->
+    <div class="social-media-icons">
+      <a href="https://twitter.com/home" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"> </i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+        <i class="fab fa-facebook"> </i>
+      </a>
+      <a href="https://github.com/infosecillinois/infosecillinoisweb" target="_blank" class="social-icon">
+        <i class="fab fa-github"> </i>
+      </a>
+      <a href="https://www.linkedin.com/in/pratham-soni-6a971421b/" class="social-icon">
+        <i class="fab fa-linkedin"> </i>
+        <!--<img src="img.png" alt="LinkedIn">-->
+      </a>
+    </div>
+  </footer> 
+
+</body>
+
+<script>
+  document.addEventListener('scroll', () => {
+    const header = document.querySelector('.navbar');
+
+    if(window.scrollY > 335) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  })
+
+</script>
+</html>
